@@ -1,2 +1,1 @@
-export { IBmw } from "./bmwInterface";
-export { BmwFactory, Model } from "./bmwFactory";
+export { IBmw, Model } from "./bmwInterface";

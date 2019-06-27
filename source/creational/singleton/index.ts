@@ -1,7 +1,7 @@
 export class Person {
-    public static instance: object;
+    public static instance: Person;
     constructor() {
-        if (typeof Person.instance === "object") {
+        if (Person.instance) {
             return Person.instance;
         }
         Person.instance = this;

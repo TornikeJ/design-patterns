@@ -1,7 +1,7 @@
 import { Droid } from "./interface";
 import {Rx24} from "./Rx24";
 
-type droidType = "battle" | "pilot";
+type droidType = "battle";
 
 function droidProducer(kind: droidType) {
     if (kind === "battle") {
