@@ -2,6 +2,7 @@ import { RequestBuilder } from "./builder";
 import { Request } from "./builder/Request";
 import { BmwFactory } from "./factory";
 import Sheep from "./prototype/Sheep";
+import Person from "./singleton";
 
 const builder = new RequestBuilder();
 
@@ -16,3 +17,6 @@ const sheep = new Sheep("beee", 50);
 
 console.log(sheep);
 console.log(sheep.clone());
+
+const person = new Person();
+console.log(person);
