@@ -12,3 +12,5 @@ export class Request implements IRequest {
         this.payload = {};
     }
 }
+
+export default Request;

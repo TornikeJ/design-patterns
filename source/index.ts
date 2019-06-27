@@ -1,8 +1,9 @@
-import { RequestBuilder } from "./builder";
-import { Request } from "./builder/Request";
-import { BmwFactory } from "./factory";
-import Sheep from "./prototype/Sheep";
-import Person from "./singleton";
+import droidProducer from "./creational/abstract-factory";
+import RequestBuilder from "./creational/builder";
+import Request from "./creational/builder/Request";
+import BmwFactory from "./creational/factory";
+import Sheep from "./creational/prototype/Sheep";
+import Person from "./creational/singleton";
 
 const builder = new RequestBuilder();
 
@@ -20,3 +21,7 @@ console.log(sheep.clone());
 
 const person = new Person();
 console.log(person);
+
+const droid = droidProducer("battle");
+
+console.log(droid().info());
