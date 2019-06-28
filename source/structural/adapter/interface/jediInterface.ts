@@ -1,3 +1,3 @@
 export interface IJedi {
-    attackWithSaber():number;
+    attackWithSaber(): number;
 }

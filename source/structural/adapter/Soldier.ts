@@ -1,12 +1,12 @@
-import { ISoldier } from './interface/soldierInterface';
+import { ISoldier } from "./interface/soldierInterface";
 
 class Soldier implements ISoldier {
     public level: number;
-    constructor(level:number) {
+    constructor(level: number) {
         this.level = level;
     }
 
-    attack() {
+    public attack() {
         return this.level * 1;
     }
 }

@@ -1,13 +1,13 @@
-import { IJediAdapter } from './interface/jediAdapter';
-import { Jedi } from './Jedi';
+import { IJediAdapter } from "./interface/jediAdapter";
+import { Jedi } from "./Jedi";
 
-class JediAdapter implements IJediAdapter{
-    jedi: Jedi;
-    constructor(jedi:Jedi) {
+class JediAdapter implements IJediAdapter {
+    public jedi: Jedi;
+    constructor(jedi: Jedi) {
         this.jedi = jedi;
     }
 
-    attack() {
+    public attack() {
         return this.jedi.attackWithSaber();
     }
 }

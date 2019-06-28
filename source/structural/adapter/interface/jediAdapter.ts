@@ -1,3 +1,3 @@
 export interface IJediAdapter {
-    attack():number;
+    attack(): number;
 }

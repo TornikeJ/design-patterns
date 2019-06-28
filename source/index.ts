@@ -4,6 +4,7 @@ import Request from "./creational/builder/Request";
 import BmwFactory from "./creational/factory";
 import Sheep from "./creational/prototype/Sheep";
 import Person from "./creational/singleton";
+import ShopFacade from "./structural/facade";
 
 const builder = new RequestBuilder();
 
@@ -25,3 +26,6 @@ console.log(person);
 const droid = droidProducer("battle");
 
 console.log(droid().info());
+
+const shopfacade = new ShopFacade();
+console.log(shopfacade.calc(10));

@@ -1,3 +1,3 @@
 export interface ISoldier {
-    attack():number;
+    attack(): number;
 }
